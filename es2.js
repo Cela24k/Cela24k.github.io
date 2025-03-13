@@ -3,9 +3,8 @@ window.onload = () => {
     let score = document.body.appendChild(document.createElement('h1'));
     let board = generateBoard(width);
     score.textContent = 'Heads +100; Ass -200; Empty: +0';
-    board.style = 'display: flex; height: 100vh;';
+    board.style = 'display: flex; height: 100vh; width:100vw;';
     let b = document.body.appendChild(board);
-    
     var timer = setInterval(()=>{
         score.textContent = points;
         document.body.removeChild(b);
@@ -28,21 +27,28 @@ function generateImage(state) {
     let container = document.createElement('div');
     let src;
 
+    container.style = 'background-image'
     if (state === 0) {
         src = "grass.png";
         container.addEventListener('click', () => {
-            
+            points += 0;
+        });
+        container.addEventListener('touch', () => {
             points += 0;
         });
     }
     else if (state === 1) {
         src = "rear.png";
         container.addEventListener('click', () => points -= 200);
+        container.addEventListener('touch', () => points -= 200);
+
     }
     else
     {
         src = "head.png";
         container.addEventListener('click', () => points += 100);
+        container.addEventListener('touch', () => points += 100);
+
     }
 
     let image = document.createElement('img');
