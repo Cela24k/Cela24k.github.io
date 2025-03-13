@@ -1,0 +1,118 @@
+\documentclass[10pt,a4paper,ragged2e,withhyper]{altacv}
+
+\geometry{left=1.25cm,right=1.25cm,top=1.5cm,bottom=1.5cm,columnsep=1.2cm}
+
+\usepackage{paracol}
+
+\definecolor{SlateGrey}{HTML}{2E2E2E}
+\definecolor{LightGrey}{HTML}{666666}
+\definecolor{DarkPastelRed}{HTML}{450808}
+\definecolor{PastelRed}{HTML}{8F0D0D}
+\definecolor{GoldenEarth}{HTML}{E7D192}
+\colorlet{name}{black}
+\colorlet{tagline}{PastelRed}
+\colorlet{heading}{DarkPastelRed}
+\colorlet{headingrule}{GoldenEarth}
+\colorlet{subheading}{PastelRed}
+\colorlet{accent}{PastelRed}
+\colorlet{emphasis}{SlateGrey}
+\colorlet{body}{LightGrey}
+
+\renewcommand{\namefont}{\Huge\rmfamily\bfseries}
+\renewcommand{\personalinfofont}{\footnotesize}
+\renewcommand{\cvsectionfont}{\LARGE\rmfamily\bfseries}
+\renewcommand{\cvsubsectionfont}{\large\bfseries}
+
+\renewcommand{\cvItemMarker}{{\small\textbullet}}
+\renewcommand{\cvRatingMarker}{\faCircle}
+
+\begin{document}
+\name{Alessandro Celadon}
+\tagline{Full Stack Developer}
+
+\personalinfo{
+  \email{aleceladon@gmail.com}
+  \phone{347-5576930}
+  \location{Italia}
+  \homepage{cela24k.github.io}
+  \linkedin{linkedin.com/in/alessandro-celadon-6b6a9329b/}
+  \github{Cela24k}
+}
+
+\makecvheader
+\columnratio{0.6}
+\begin{paracol}{2}
+
+\cvsection{Esperienza}
+
+\cvevent{Tirocinante Sviluppatore Software}{Autoware Srl}{Luglio-Agosto 2024}{Italia}
+\begin{itemize}
+  \item Progettazione di una piattaforma di scambio dati configurabile per sincronizzare dati da una piattaforma on-premise a un database locale.
+  \item Tecnologie: C\#, PostgreSQL, REST API.
+\end{itemize}
+
+\cvsection{Progetti}
+
+\cvevent{Portale di gestione progetti di ricerca universitario}{Flask + SQLAlchemy ORM}{}{}
+\begin{itemize}
+  \item Creazione di un portale per la gestione di progetti di ricerca.
+\end{itemize}
+
+\cvevent{Showcase prodotti 3D}{React, HTML, CSS, ThreeJS}{}{}
+\begin{itemize}
+  \item Sviluppo di un sito vetrina per prodotti 3D interattivi.
+\end{itemize}
+
+\cvevent{Battaglia Navale Full Stack}{MEAN Stack}{}{}
+\begin{itemize}
+  \item Implementazione di un gioco di battaglia navale con Angular, Express.js, MongoDB e Node.js.
+\end{itemize}
+
+\cvsection{Competenze}
+
+\cvtag{Sviluppo Web}
+\cvtag{REST API}
+\cvtag{Node.js, JavaScript, TypeScript}
+\cvtag{SQL (PostgreSQL), NoSQL (MongoDB)}
+\cvtag{Linux, Windows}
+\cvtag{Flask, SQLAlchemy ORM}
+\cvtag{Stack MERN e MEAN}
+
+
+\cvsection{Linguaggi di Programmazione}
+
+\cvskill{Java}{5}
+\divider
+\cvskill{C, C++}{4.5}
+\divider
+\cvskill{JavaScript / TypeScript / Nodejs}{4.5}
+\divider
+\cvskill{Python}{4}
+\divider
+\cvskill{C\#}{3.5}
+\divider
+
+\switchcolumn
+
+\cvsection{Formazione}
+
+\cvevent{Studente di Informatica}{Universit\`a Ca' Foscari Venezia}{2019 - 2025}{}
+\begin{itemize}
+  \item Studio approfondito di sviluppo software, sicurezza informatica e database.
+  \item Autodidatta in HTML, CSS, ThreeJS, Sicurezza Informatica.
+\end{itemize}
+
+\cvevent{Diploma Scientifico}{Liceo G.B. Quadri}{2014 - 2019}{}
+
+\cvsection{Certificazioni}
+
+\cvachievement{\faCertificate}{Certificazione TOEFL B2}{Competenze linguistiche in inglese avanzate.}
+
+\cvsection{Referenze}
+
+\cvref{Prof. Cortesi}{Universit\`a di Venezia}{cortesi@unive.it}{}
+\divider
+\cvref{Diego Maron}{Autoware Srl}{diego.maron@autoware.it}{}
+
+\end{paracol}
+\end{document}
